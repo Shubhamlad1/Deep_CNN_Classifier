@@ -42,6 +42,7 @@ class EvaluationConfig:
     path_of_model: Path
     training_data: Path
     score_file_path: Path
-    all_params: dict
+    #all_params: dict
+    mlflow_url: str
     params_images_size: list
     params_batch_size: int

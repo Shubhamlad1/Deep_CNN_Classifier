@@ -24,4 +24,14 @@ training:
 evaluation:
   root_dir: artifact/evaluation
   score_file_path: artifact/evaluation/scores.json
+
+params:
+  AUGMENTATION: True
+  IMAGE_SIZE: [224, 224, 3]
+  BATCH_SIZE: 16
+  INCLUDE_TOP: False
+  EPOCHS: 1
+  CLASSES: 2
+  WEIGHTS: imagenet
+  LEARNING_RATE: 0.01
   

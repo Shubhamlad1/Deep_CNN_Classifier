@@ -15,6 +15,7 @@ def main():
     evaluation = Evaluation(EvaluationConfig)
     evaluation.evaluation()
     evaluation.save_scores()
+    evaluation.log_into_mlflow()
 
 if __name__ == '__main__':
     try:

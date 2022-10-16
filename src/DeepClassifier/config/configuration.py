@@ -102,6 +102,7 @@ class ConfigurationManager:
     def get_evaluation_config(self) -> EvaluationConfig:
         evaluation_config = self.config["evaluation"]
         training_config = self.config["training"]
+        all_params= self.params
         create_directories([Path(evaluation_config["root_dir"])])
         training_data= os.path.join(self.config.data_ingestion.unzip_dir, "PetImages")
 
@@ -109,7 +110,8 @@ class ConfigurationManager:
                 path_of_model= "artifact/training/model.h5",
                 score_file_path= Path(evaluation_config["score_file_path"]),
                 training_data= training_data,
-                all_params= self.params,
+                #all_params= dict(self.config["params"]),
+                mlflow_url="https://dagshub.com/Shubhamlad1/Deep_CNN_Classifier.mlflow",
                 params_batch_size= self.params.BATCH_SIZE,
                 params_images_size= [224, 224, 3]
             )

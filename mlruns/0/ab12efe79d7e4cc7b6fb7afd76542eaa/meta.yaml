@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ALTEM-SERVER/Desktop/Dekstop/New%20folder/I%20Neuron/Projects/Trying/Deep_CNN_Classifier/mlruns/0/ab12efe79d7e4cc7b6fb7afd76542eaa/artifacts
+end_time: 1665572050105
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: ab12efe79d7e4cc7b6fb7afd76542eaa
+run_uuid: ab12efe79d7e4cc7b6fb7afd76542eaa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1665572016994
+status: 3
+tags: []
+user_id: ALTEM-SERVER
